@@ -1,0 +1,21 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: gerenciador_de_estoque_api_development
+  username:
+  password:
+
+test:
+  <<: *default
+  database: gerenciador_de_estoque_api_test
+
+production:
+  <<: *default
+  database: gerenciador_de_estoque_api_production
+  username:
+  password:
