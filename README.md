@@ -1,4 +1,4 @@
-# Gerenciador de Estoque usando Ruby on Rails e TDD(RSpec)
+# API de um Gerenciador de Estoque usando Ruby on Rails e TDD(RSpec)
 
 ### Uma Aplicação para Gerenciar o estoque do seu negócio
 
