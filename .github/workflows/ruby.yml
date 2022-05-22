@@ -37,7 +37,6 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt-get update && sudo apt-get -yqq install libpq-dev build-essential libcurl4-openssl-dev
-          cd gerenciador_de_estoque_api
           bundle install --jobs 4 --retry 3
       - name: Run Tests
         env:
@@ -47,7 +46,6 @@ jobs:
           POSTGRES_USER: rails_github_actions
           POSTGRES_PASSWORD: postgres
         run: |
-          cd gerenciador_de_estoque_api
           cp config/database.ci.yml config/database.yml
           bundle exec rails db:schema:load
           bundle exec rspec --format progress
