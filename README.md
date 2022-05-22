@@ -13,8 +13,8 @@
 
 ### Siga os passos para rodar o projeto corretamente
 
-- execute bundle
-- instale e configure o postgresSQL na sua máquina
+- Execute bundle
+- Instale e configure o postgresSQL na sua máquina
 - Crie um arquivo 'config/database.yml' baseado do no 'config/database.yml.example' e configure seu usuário e senha do psql
 
 ### Para iniciar a aplicação
